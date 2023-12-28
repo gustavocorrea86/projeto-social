@@ -23,14 +23,11 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     left: 50%;
-   
+    top: -20%;
     transform: translate(-50%, -50%);
     position: relative;
-   
 }
 iframe{
-    background-image: url(pacote-d013/imagens/tela-home.jpg);
-    background-size: contain;
     width: 220px;
     height: 385px;
     position: absolute;
