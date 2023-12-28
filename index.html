@@ -10,13 +10,17 @@
             padding: 0px;
             margin: 0px;
         }
+        body, html{
+            height: 100vh;
+            width: 100vw;
+        }
         body{
             height: 100vh;
             background-size: 100% 100%;
             background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
             background-repeat: no-repeat;
             position: relative;
-           
+            background-attachment: fixed;
         }
         #iphone{
             background-image: url(pacote-d013/imagens/frame-iphone.png);
@@ -26,38 +30,50 @@
             position: absolute;
             background-repeat: no-repeat;
             left: 50%;
-            top: 50%;
+           
             transform: translate(-50%, -50%);
             position: relative;
+           
         }
         iframe{
             background-image: url(pacote-d013/imagens/tela-home.jpg);
-            background-size: 100% 100%;
+            background-size: contain;
+            width: 220px;
             height: 385px;
-            width: 215px;
             position: absolute;
             border: none;
+            border-radius: 10px 10px 10px 10px;
             background-repeat: no-repeat;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-           
         }
         .icone{
-            display: block;
             border-radius: 50%;
-            width: 30px;
-            height: ;
+            width: 45px;
+            margin: 10px;
+            box-sizing: border-box;
          }
-         
+         .icone:hover{
+            border: 2px solid white;
+            transform: translate(-3px, -3px);
+            transition: transform 1s, border 1s;
+         }
+         #menu{
+            text-align: right;
+            margin-right: 20px;
+
+         }
     </style>
 </head>
 <body>
-    <a href="pacote-d013/imagens/tela-github.jpg" target="tela"><img class="icone" src="pacote-d013/imagens/logo-github.jpg" alt=""></a>
-    <a href="pacote-d013/imagens/tela-facebook.jpg" target="tela"><img class="icone" src="pacote-d013/imagens/logo-facebook.jpg" alt=""></a>
-    <a href="pacote-d013/imagens/tela-instagram.jpg" target="tela"><img class="icone" src="pacote-d013/imagens/logo-instagram.jpg" alt=""></a>
-    <a href="pacote-d013/imagens/tela-youtube.png" target="tela"><img class="icone" src="pacote-d013/imagens/logo-youtube.jpg" alt=""></a>
-    <a href="pacote-d013/imagens/tela-home.jpg" target="tela"> <img class="icone"  src="pacote-d013/imagens/logo-home.jpg" alt=""></a>
+        <div id="menu">
+            <a href="https://gustavocorrea86.github.io/html_e_css/desafios/desafio012m3/desafio012" target="tela"><img class="icone" src="pacote-d013/imagens/logo-github.jpg" alt=""></a><br>
+            <a href="https://gustavocorrea86.github.io/projetoandroid/" target="tela"><img class="icone" src="pacote-d013/imagens/logo-facebook.jpg" alt=""></a><br>
+            <a href="pacote-d013/imagens/tela-instagram.jpg" target="tela"><img class="icone" src="pacote-d013/imagens/logo-instagram.jpg" alt=""></a><br>
+            <a href="pacote-d013/imagens/tela-youtube.png" target="tela"><img class="icone" src="pacote-d013/imagens/logo-youtube.jpg" alt=""></a><br>
+            <a href="pacote-d013/imagens/tela-home.jpg" target="tela"> <img class="icone"  src="pacote-d013/imagens/logo-home.jpg" alt=""></a><br>
+        </div>
 
     <div id="iphone">
           <iframe name="tela" src="" ></iframe>
