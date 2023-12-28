@@ -23,7 +23,7 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     left: 50%;
-    top: -20%;
+    bottom: 10%;
     transform: translate(-50%, -50%);
     position: relative;
 }
