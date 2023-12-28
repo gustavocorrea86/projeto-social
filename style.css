@@ -50,5 +50,7 @@ iframe{
     transition: transform 1s, border 1s;
  }
  #menu{
-    text-align: right;
+    margin-left: 85%;
+    margin-right: 20%;
+   
  }
